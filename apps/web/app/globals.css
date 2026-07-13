@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 240 20% 99%;
+    --foreground: 240 20% 12%;
+    --card: 0 0% 100%;
+    --muted: 240 12% 94%;
+    --primary: 246 74% 60%;
+  }
+  .dark {
+    --background: 240 18% 8%;
+    --foreground: 240 15% 94%;
+    --card: 240 17% 12%;
+    --muted: 240 13% 18%;
+    --primary: 246 80% 68%;
+  }
+  * {
+    @apply border-slate-200 dark:border-slate-800;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
